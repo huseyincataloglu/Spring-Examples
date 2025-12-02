@@ -15,8 +15,6 @@ import javax.sql.DataSource;
 @Configuration
 public class DataSourceConfig {
 
-    //These are for spring boot's default behaviour for datasource creation
-
     @Value("${spring.datasource.url}")
     private  String url;
 

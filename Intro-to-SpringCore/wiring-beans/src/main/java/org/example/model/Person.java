@@ -2,7 +2,7 @@ package org.example.model;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
+
 
 // We will define has-A relationship between Person and Parrot instances
 

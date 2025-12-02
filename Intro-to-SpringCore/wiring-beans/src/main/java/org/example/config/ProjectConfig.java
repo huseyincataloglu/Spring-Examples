@@ -2,22 +2,17 @@ package org.example.config;
 
 
 import org.example.model.*;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Scope;
+
 
 // Configuration annotation indicates the class where to define the beans. In this class beans objects are defined and
 // stored in Spring application context.
 // Spring manages these objects
 @Configuration
-@ComponentScan(basePackages = "model")
 public class ProjectConfig {
-
-    //Spring add the object instance return from the bean annotated method. We have created the object inside the method
-    //Remember : Bean gets its name with the method name which is parrot ib the example below.
+    
     @Bean(name = "parrot1")
     public Parrot parrot1() {
         Parrot parrot = new Parrot();
@@ -47,9 +42,9 @@ public class ProjectConfig {
     }
 
 
-    // We have injected the dog bean into person object bean with autowired annotation
+    // We have injected the dog bean into person bean with autowired annotation
     // But to be able to do this , we have at least one Dog bean in our application context
-    // we didnt use component, componentscan streotype annotation in this project so we have created dog object by hand
+    // we didnt use component, componentscan ,streotype annotation in this project so we have created dog object by hand
     @Bean
     public Dog dog(){
         Dog dog = new Dog();
@@ -91,4 +86,5 @@ public class ProjectConfig {
         p.setCat(cat);
         return p;
     }
+
 }

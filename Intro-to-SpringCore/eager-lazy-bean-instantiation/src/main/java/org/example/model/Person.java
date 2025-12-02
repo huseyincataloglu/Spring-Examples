@@ -6,7 +6,6 @@ import org.springframework.stereotype.Component;
 
 // We will define has-A relationship between Person and other types
 
-
 public class Person {
     private String name;
 

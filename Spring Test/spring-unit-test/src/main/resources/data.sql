@@ -1,0 +1,2 @@
+INSERT INTO account VALUES(1,'Husein',1000)
+INSERT INTO account VALUES(2,'Ali',1000)

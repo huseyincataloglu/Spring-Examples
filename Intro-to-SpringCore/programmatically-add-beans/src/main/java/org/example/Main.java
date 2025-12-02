@@ -9,6 +9,7 @@ import java.util.function.Supplier;
 public class Main {
     public static void main(String[] args) {
 
+        // we can create beans in context which is created by configuration class
         var context = new AnnotationConfigApplicationContext(ProjectConfig.class);
 
         Parrot parrot = new Parrot("Miki");
